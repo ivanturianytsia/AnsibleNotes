@@ -1,6 +1,11 @@
 - hosts: all
   remote_user: ivanturianytsia
   tasks:
+  - name: Ensure EPEL is enabled
+    yum:
+      name: epel-release
+      state: present
+    become: True
   - name: Ensure libselinux-python is present
     yum:
       name: libselinux-python
@@ -11,3 +16,8 @@
       name: libsemanage-python
       state: present
     become: True
+  - name: Ensure we have last version of every package
+    yum:
+      name: "*"
+      state: latest
+      become: True
