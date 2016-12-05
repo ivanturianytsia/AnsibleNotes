@@ -20,4 +20,4 @@
     yum:
       name: "*"
       state: latest
-      become: True
+    become: True
