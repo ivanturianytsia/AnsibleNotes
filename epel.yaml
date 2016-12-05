@@ -1,5 +1,8 @@
-- name: Ensure EPEL is enabled
-  yum:
-    name: epel-release
-    state: present
-  become: True
+- hosts: all
+  remote_user: ivanturianytsia
+  tasks:
+  - name: Ensure EPEL is enabled
+    yum:
+      name: epel-release
+      state: present
+    become: True
