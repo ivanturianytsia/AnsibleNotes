@@ -1,0 +1,13 @@
+- hosts: all
+  remote_user: ivanturianytsia
+  tasks:
+  - name: Ensure libselinux-python is present
+    yum:
+      name: libselinux-python
+      state: present
+    become: True
+  - name: Ensure libsemanage-python is present
+    yum:
+      name: libsemanage-python
+      state: present
+    become: True
