@@ -1,0 +1,6 @@
+[webserver]
+207.244.96.79
+
+[webserver:vars]
+ansible_user = root
+ansible_private_key_file = /Users/vanyaturianitsa/.ssh/id_rsa

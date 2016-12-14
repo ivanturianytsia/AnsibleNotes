@@ -1,0 +1,24 @@
+{
+	"name": "ansible-leaseweb-node",
+	"version": "1.0.0",
+	"description": "",
+	"main": "leaseweb.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node leaseweb.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ivanturianytsia/AnsibleNotes.git"
+	},
+	"author": "Ivan Turianytsia",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ivanturianytsia/AnsibleNotes/issues"
+	},
+	"homepage": "https://github.com/ivanturianytsia/AnsibleNotes#readme",
+	"dependencies": {
+		"request": "^2.79.0",
+		"request-promise-native": "^1.0.3"
+	}
+}
